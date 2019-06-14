@@ -30,4 +30,12 @@ export class AppComponent implements OnInit {
     });
   }
 
+  onChangeFirst(){
+    this.serverElements[0].name = 'changeds';
+  }
+
+  onDestroyFirst() {
+    this.serverElements.splice(0, 1);
+  }
+
 }
